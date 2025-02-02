@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
                   alt="Logo"
                   className="h-8 w-auto"
                 />
-                <span className="ml-2 text-white text-sm">A.P Graph Crafter Alpha 1.9.1</span>
+                <span className="ml-2 text-white text-sm">A.P Graph Crafter Alpha 1.9.2</span>
               </Link>
             </div>
 
