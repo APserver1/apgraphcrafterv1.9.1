@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.react-tabs__tab {
+  @apply px-4 py-2 cursor-pointer border-b-2 border-transparent;
+}
+
+.react-tabs__tab--selected {
+  @apply border-blue-500;
+}
+
+.react-tabs__tab-list {
+  @apply flex border-b mb-4;
+}
+
+.react-tabs__tab-panel {
+  @apply hidden;
+}
+
+.react-tabs__tab-panel--selected {
+  @apply block;
+}
+
+/* Custom range input styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  @apply w-full h-2 bg-gray-300 rounded-lg outline-none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  @apply w-4 h-4 bg-blue-500 rounded-full cursor-pointer;
+  margin-top: -4px;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply w-4 h-4 bg-blue-500 border-none rounded-full cursor-pointer;
+}
+
+input[type="range"]::-ms-thumb {
+  @apply w-4 h-4 bg-blue-500 border-none rounded-full cursor-pointer;
+}
